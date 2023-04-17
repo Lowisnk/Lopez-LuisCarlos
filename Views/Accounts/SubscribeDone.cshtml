@@ -1,0 +1,29 @@
+﻿@model MDB.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SubscribeDone</title>
+</head>
+<body>
+    <h3>Inscription réussie</h3>
+    <hr />
+    <div style="font-size:18px">
+        @ViewBag.Message
+        <br /><br />
+        Votre inscription a été enregistrée.
+        <br /><br />
+        Vous allez recevoir un courriel qui contiendra le lien vers la confirmation de votre adresse de courriel.
+        <br /><br />
+        Merci et bonne journée,
+        <br /><br />
+        Webmestre
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model MDB.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VerifyDone</title>
+</head>
+<body>
+    <h2>Vérification réussie</h2>
+    <hr />
+    <div style="font-size:18px">
+        @ViewBag.Message
+        <br /><br />
+        Votre adresse de courriel est maintenant vérifiée.
+        <br /><br />
+        Cliquez sur le lien ci-dessous pour vous connecter.
+        <br /><br />
+        Merci et bonne journée,
+        <br /><br />
+        Webmestre
+    </div>
+    @Html.ActionLink("Se connecter", "Login");
+</body>
+</html>

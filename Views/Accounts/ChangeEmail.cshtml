@@ -1,0 +1,30 @@
+﻿@model MDB.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ChangeEmail</title>
+</head>
+<body>
+    <h2>Changement de email</h2>
+    <hr />
+    <div style="font-size:18px">
+        @ViewBag.Message
+        <br /><br />
+        Votre nouvelle adresse courriel a besoin d'être vérifiée.
+        <br /><br />
+        Veuillez vérifier votre adresse courriel
+        <br /><br />
+        Merci et bonne journée,
+        <br /><br />
+        Webmestre
+    </div>
+    @Html.ActionLink("Se connecter", "Login");
+</body>
+</html>
